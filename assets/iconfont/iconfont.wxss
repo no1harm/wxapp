@@ -1,0 +1,34 @@
+@font-face {font-family: "iconfont";
+  src: url('//at.alicdn.com/t/font_917192_z2m0x1wf9z.eot?t=1542169364260'); /* IE9*/
+  src: url('//at.alicdn.com/t/font_917192_z2m0x1wf9z.eot?t=1542169364260#iefix') format('embedded-opentype'), /* IE6-IE8 */
+  url('//at.alicdn.com/t/font_917192_z2m0x1wf9z.ttf?t=1542169364260') format('truetype'), /* chrome, firefox, opera, Safari, Android, iOS 4.2+*/
+  url('//at.alicdn.com/t/font_917192_z2m0x1wf9z.svg?t=1542169364260#iconfont') format('svg'); /* iOS 4.1- */
+}
+
+.iconfont {
+  font-family:"iconfont" !important;
+  font-size:28rpx;
+  font-style:normal;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+.icon-guanbi2:before { content: "\e725"; }
+
+.icon-jiahao:before { content: "\e726"; }
+
+.icon-flag-china:before { content: "\e68f"; }
+
+.icon-flag-france:before { content: "\e690"; }
+
+.icon-flag-japan:before { content: "\e692"; }
+
+.icon-flag-spain:before { content: "\e694"; }
+
+.icon-flag-south-corea:before { content: "\e695"; }
+
+.icon-flag-united-states:before { content: "\e69a"; }
+
+.icon-hanbao:before { content: "\e699"; }
+
+.icon-copy:before { content: "\e8be"; }

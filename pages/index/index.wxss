@@ -1,0 +1,74 @@
+/**index.wxss**/
+.change {
+  color: #8995a1;
+  font-size: 34rpx;
+  padding:44rpx 40rpx 0;
+  display: flex;
+}
+.change .icon-right {
+  color: #888;
+}
+.change .icon-hanbao {
+	font-size: 30rpx;
+		margin-left: 12rpx;
+  	color: #0198F6;
+}
+
+.input-area {
+  display: flex;
+	flex-direction: column;
+	align-items: center;
+	margin:50rpx 0 0 0;
+}
+.textarea-wrap {
+	width: 100%;
+  background: #fff;
+	display: flex;
+	justify-content: center;
+}
+.input-area textarea {
+  background-color: #0198F6;
+	color:white;
+  padding: 100rpx 30rpx 30rpx 30rpx;
+  width: 94%;
+  margin: 0;
+  box-sizing: border-box;
+	border-radius: 16rpx 16rpx 0 0;
+	line-height: 20rpx;
+}
+.input-area .icon-close {
+  position: absolute;
+  right: 12rpx;
+  top: 20rpx;
+  z-index: 100;
+  font-size: 40rpx;
+  color: #888;
+}
+
+.input-area .text-area {
+  width: 94%;	
+  min-height: 100rpx;
+  padding: 40rpx;
+  background-color: #0198F6;
+	box-sizing: border-box;
+	border-radius: 0 0 16rpx 16rpx ;
+	margin-bottom: 40rpx;
+}
+
+.input-area .text-title {
+  font-size: 28rpx;
+  color: #fff;
+}
+
+.input-area .text-result {
+  padding: 20rpx 0;
+	color:#fff;
+	font-size: 46rpx;
+	font-weight: 600;
+}
+.input-area .operationBtns .iconfont{
+	font-size:96rpx;
+	padding: 36rpx;
+}
+
+

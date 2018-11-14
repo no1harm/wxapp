@@ -1,0 +1,38 @@
+/* @import "../assets/iconfont/iconfont.wxss"; */
+
+.container {
+  background: #fff;
+}
+.lang-list {
+  display: flex;
+	flex-direction: row;
+  flex-wrap: wrap;
+	justify-content: space-around;
+	align-items:center;
+}
+.item{
+	width: 44%;
+	height: 240rpx;
+	border-radius:36rpx;
+	display: flex;
+	justify-content:start;
+	align-items: flex-end;
+}
+.item .item-inner{
+	margin:32rpx;
+}
+.item .item-inner .txt{
+	color: #fff;
+	font-size: 44rpx;
+	padding-right: 24rpx;
+	font-weight:600;
+}
+.item .item-inner .iconfont {
+	font-size:37rpx;
+	padding-left:100rpx;
+}
+
+.item:last-child .item-inner .txt{
+	font-size: 22rpx;
+}
+

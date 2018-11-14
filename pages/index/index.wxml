@@ -1,0 +1,31 @@
+<!--index.wxml-->
+<view class="container">
+  <view class="change">
+    <navigator url="/pages/change/change" hover-class="navigator-hover">
+      <block>
+        <text>到 {{curLang.chs}}</text>
+        <text class="iconfont icon-hanbao"></text>
+      </block>
+    </navigator>
+
+  </view>
+  <view class="input-area">
+    <view class="textarea-wrap">
+      <textarea placeholder='请在此输入要翻译的文本' placeholder-style='color: #fff' bindinput='onInput' style="text-align:center;" bindconfirm='onConfirm' bindblur='onConfirm' value="{{query}}"></textarea>
+    </view>
+
+    <view class="text-area">
+      <view class="text-title">译文</view>
+      <view class="text-result" wx:for="{{result}}" wx:key="index">
+        <h3 selectable="true">{{item.dst}}</h3>
+      </view>
+    </view>
+		<view class="operationBtns">
+			<text class="iconfont .icon-copy" bindtap='clipData'></text>
+			<text class="iconfont icon-guanbi2" hidden="{{hideClearIcon}}" bindtap='onTapClose'></text>
+		</view>
+  </view>
+  <view class="copyright">
+    <text>© 2018 Colo Translate</text>
+  </view>
+</view>

@@ -1,0 +1,15 @@
+<!--change.wxml-->
+<view class="container lang-list">
+  <!-- <view class="title">翻译成</view> -->
+  <view class="item" data-chs="{{language.chs}}" data-lang="{{language.lang}}" data-index="{{index}}" wx:for="{{langList}}" wx:key="index" wx:for-item="language" bindtap='onTapItem'  hover-class="view-hover" style="background-color:{{randomColorArr[index]}}">
+    <view class="item-inner">
+      <text class="txt">{{language.chs}}</text> 
+      <text class="iconfont {{language.icon}}" wx:if="{{index===curLang.index}}"></text>
+    </view>
+  </view>
+	 <view class="item"  style="background-color:#333">
+    <view class="item-inner">
+      <text class="txt">更多语言添加中...</text> 
+    </view>
+  </view>
+</view>
