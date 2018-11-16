@@ -8,15 +8,18 @@ Page({
     query: '',
     hideClearIcon: true,
     result: [],
-    curLang: {}
+    curLang: {},
+		placeholder:'请在此输入想要翻译的文本'
   },
   onLoad: function( options) {
     console.log('onload..')
     if(options.query) {
       this.setData({ query: options.query })
-    }
-    
+    }   
   },
+	onFocus:function(){
+		this.setData({'placeholder':''})
+	},
   onShow: function () {
     if (this.data.curLang.lang !== app.globalData.curLang.lang) {
       this.setData({ curLang: app.globalData.curLang })
@@ -34,11 +37,16 @@ Page({
     console.log('focus')
   },
   onTapClose: function() {
+		this.setData({ 'placeholder': '请在此输入想要翻译的文本' })
     this.setData({ query: '', hideClearIcon: true})
   },
   onConfirm: function() {
-    if (!this.data.query) return
+    if (!this.data.query) {
+			this.setData({ 'placeholder': '请在此输入想要翻译的文本' })			
+			return
+		}
     translate(this.data.query, {from: 'auto', to: this.data.curLang.lang}).then(res=>{
+			console.log(this.placeholder)
       this.setData({'result': res.trans_result})
 
       let history = wx.getStorageSync('history')||[]
